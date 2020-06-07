@@ -4,8 +4,7 @@ import StatusController from './controllers/StatusController';
 
 class App {
   constructor() {
-    // this.tweetsListeners();
-    StatusController.sendNumberCases();
+    this.tweetsListeners();
   }
 
   tweetsListeners() {
