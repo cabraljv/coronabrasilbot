@@ -11,8 +11,8 @@ class StatusController {
     );
 
     const number_cases = response.data.split('\n')[1].split(',')[2];
-    const number_deaths = response.data.split('\n')[1].split(',')[4];
-    const message = `@${name} no Brasil atualmente temos ${number_cases} casos confirmados e ${number_deaths} mortes`;
+    const number_deaths = response.data.split('\n')[1].split(',')[5];
+    const message = `@${name} No Brasil atualmente temos ${number_cases} casos confirmados e ${number_deaths} mortes`;
     Twitter.tweetar(message, id);
   }
 }
